@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 html{
@@ -139,10 +140,13 @@ body{
 
 
 .right-side-bar{
-    background-color: #cbdffa;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
     flex-basis: 25%;
     position: sticky;
     top: 70px;
+    box-shadow: 5px 5px 20px rgba(138, 137, 137, 0.356);
 
 
 }
@@ -186,5 +190,139 @@ body{
     font-weight: 500;
     color: #626262;
     margin: 25px 0;
+}
+
+
+
+
+.side-bar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.side-bar-title h4{
+    font-size: 1.7rem;
+    color: #626262;
+}
+
+.side-bar-title a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color:#1876f2;
+}
+
+
+.events{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.events p{
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.events a{
+    text-decoration: none;
+    color: #1876f2;
+    display: block;
+
+}
+
+.left-event{
+    position: relative;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(138, 137, 137, 0.356);
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+
+
+}
+
+.left-event h3{
+    color: #626262;
+    font-size: 1.6rem;
+}
+
+.left-event span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #1876f2;
+    padding: 4px 0;
+}
+
+.name-add , .conversation-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+
+}
+
+.name-add a,.conversation-info a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 1.4rem;
+}
+
+.name-add h3{
+    color: #626262;
+}
+
+.advertisement-img{
+    width: 300px;
+}
+
+.advertisement-img img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.conversation .friends{
+    display: flex;
+    align-items: center;
+}
+
+.conversation .friends h3{
+    font-size: 1.5rem;
+    color: #626262;
+}
+
+.conversation .friends-img{
+    width: 50px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+
+.conversation .friends-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.conversation .friends-img::after{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #41db51;
+    position: absolute;
+    left: 78%;
+    bottom: 20%;
 }
 /* ################################################### main content styling  end  ############################## */
