@@ -29,11 +29,57 @@
                 <input type="text" placeholder="search">
             </div>
 
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="./Socialbook_img/profile-pic.png">
+            </div>
+
+            <div class="setting-menu">
+                <div id="btn-dark">
+                    <span></span>
+                </div>
+                <div class="setting-menu-inner">
+                    <div class="user-profile">
+                        <img src="./Socialbook_img/profile-pic.png">
+                        <div class="user-name">
+                            <p>John Doe</p>
+                            <a href="#">See Your Profile</a>
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="./Socialbook_img/feedback.png">
+                        <div class="user-name">
+                            <p>Give FeedBack</p>
+                            <a href="#">Help us to inprove</a>
+                            
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="setting-links">
+                        <img src="./Socialbook_img/setting.png" alt="" class="setting-icon">
+                        <a href="#">Settings & privacy <img src="./Socialbook_img/arrow.png" alt="" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="./Socialbook_img/help.png" alt="" class="setting-icon">
+                        <a href="#">Help & Support <img src="./Socialbook_img/arrow.png" alt="" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="./Socialbook_img/display.png" alt="" class="setting-icon">
+                        <a href="#">Display & Accessibility <img src="./Socialbook_img/arrow.png" alt="" width="10px"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="./Socialbook_img/logout.png" alt="" class="setting-icon">
+                        <a href="#">Log Out <img src="./Socialbook_img/arrow.png" alt="" width="10px"></a>
+                    </div>
+    
+
+                </div>
             </div>
             
         </div>
+        <!------------------------ setting menu ------------------------>
     </nav>
 
     <div class="container">
@@ -59,7 +105,226 @@
 
         </div>
         <div class="main-content">
+            <div class="story-gallery">
+                <div class="story">
+                    <img src="./Socialbook_img/upload.png">
+                    <p>Alish maria</p>
+                </div>
+                <div class="story story1">
+                    <img src="./Socialbook_img/member-1.png">
+                    <p>Robart</p>
+                </div>
+                <div class="story story2">
+                    <img src="./Socialbook_img/member-2.png">
+                    <p>lily lily</p>
+                </div>
+                <div class="story story3">
+                    <img src="./Socialbook_img/member-3.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story4">
+                    <img src="./Socialbook_img/member-4.png">
+                    <p>Robi master</p>
+                </div>
+            </div>
 
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./Socialbook_img/profile-pic.png">
+                    <div class="user-name">
+                        <p>John Doe</p>
+                        <small>Public</small>
+                        <i class="fas fa-caret-down fa-1x"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="what's on your mind?"></textarea>
+
+                </div>
+
+                <div class="add-post-links">
+                    <a href="#"><img src="./Socialbook_img/live-video.png" alt="">Live Video</a>
+                    <a href="#"><img src="./Socialbook_img/photo.png" alt="">Photo/Video</a>
+                    <a href="#"><img src="./Socialbook_img/feeling.png" alt="">Feeling/Activity</a>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+               <div class="post-row">
+                <div class="user-profile">
+                    <img src="./Socialbook_img/profile-pic.png" alt="">
+                    <div>
+                        <p>John Don</p>
+                        <span>June 24 2021, 13:40 pm</span>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v fa-2x"></i>
+               </div>
+                <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores laudantium cum sit et culpa aut quas deserunt magni neque! <a href="#">#Emon</a><a href="#">#Imran</a></p>
+                <img src="./Socialbook_img/feed-image-1.png" class="post-img" alt="">
+                
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./Socialbook_img/like-blue.png" alt="">120</div>
+                        <div><img src="./Socialbook_img/comments.png" alt="">40</div>
+                        <div><img src="./Socialbook_img/share.png" alt="">20</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./Socialbook_img/profile-pic.png" alt="">  <i class="fas fa-caret-down fa-1x"></i>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                 <div class="user-profile">
+                     <img src="./Socialbook_img/profile-pic.png" alt="">
+                     <div>
+                         <p>John Don</p>
+                         <span>June 25 2021, 15:40 pm</span>
+                     </div>
+                 </div>
+                 <i class="fas fa-ellipsis-v fa-2x"></i>
+                </div>
+                 <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores laudantium cum sit et culpa aut quas deserunt magni neque! <a href="#">#Emon</a><a href="#">#Imran</a></p>
+                 <img src="./Socialbook_img/feed-image-2.png" class="post-img" alt="">
+                 
+ 
+                 <div class="post-row">
+                     <div class="activity-icons">
+                         <div><img src="./Socialbook_img/like-blue.png" alt="">110</div>
+                         <div><img src="./Socialbook_img/comments.png" alt="">450</div>
+                         <div><img src="./Socialbook_img/share.png" alt="">250</div>
+ 
+                     </div>
+                     <div class="post-profile-icon">
+                         <img src="./Socialbook_img/profile-pic.png" alt="">  <i class="fas fa-caret-down fa-1x"></i>
+ 
+ 
+                     </div>
+                 </div>
+ 
+ 
+             </div>
+
+             <div class="post-container">
+                <div class="post-row">
+                 <div class="user-profile">
+                     <img src="./Socialbook_img/profile-pic.png" alt="">
+                     <div>
+                         <p>John Don</p>
+                         <span>June 25 2021, 12:40 pm</span>
+                     </div>
+                 </div>
+                 <i class="fas fa-ellipsis-v fa-2x"></i>
+                </div>
+                 <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores laudantium cum sit et culpa aut quas deserunt magni neque! <a href="#">#Emon</a><a href="#">#Imran</a></p>
+                 <img src="./Socialbook_img/feed-image-3.png" class="post-img" alt="">
+                 
+ 
+                 <div class="post-row">
+                     <div class="activity-icons">
+                         <div><img src="./Socialbook_img/like-blue.png" alt="">410</div>
+                         <div><img src="./Socialbook_img/comments.png" alt="">350</div>
+                         <div><img src="./Socialbook_img/share.png" alt="">200</div>
+ 
+                     </div>
+                     <div class="post-profile-icon">
+                         <img src="./Socialbook_img/profile-pic.png" alt="">  <i class="fas fa-caret-down fa-1x"></i>
+ 
+ 
+                     </div>
+                 </div>
+ 
+ 
+             </div>
+
+
+             <div class="post-container">
+                <div class="post-row">
+                 <div class="user-profile">
+                     <img src="./Socialbook_img/profile-pic.png" alt="">
+                     <div>
+                         <p>John Don</p>
+                         <span>June 26 2021, 15:40 pm</span>
+                     </div>
+                 </div>
+                 <i class="fas fa-ellipsis-v fa-2x"></i>
+                </div>
+                 <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores laudantium cum sit et culpa aut quas deserunt magni neque! <a href="#">#Emon</a><a href="#">#Imran</a></p>
+                 <img src="./Socialbook_img/feed-image-4.png" class="post-img" alt="">
+                 
+ 
+                 <div class="post-row">
+                     <div class="activity-icons">
+                         <div><img src="./Socialbook_img/like-blue.png" alt="">210</div>
+                         <div><img src="./Socialbook_img/comments.png" alt="">450</div>
+                         <div><img src="./Socialbook_img/share.png" alt="">230</div>
+ 
+                     </div>
+                     <div class="post-profile-icon">
+                         <img src="./Socialbook_img/profile-pic.png" alt="">  <i class="fas fa-caret-down fa-1x"></i>
+ 
+ 
+                     </div>
+                 </div>
+ 
+ 
+             </div>
+
+
+             <div class="post-container">
+                <div class="post-row">
+                 <div class="user-profile">
+                     <img src="./Socialbook_img/profile-pic.png" alt="">
+                     <div>
+                         <p>John Don</p>
+                         <span>June 26 2021, 15:40 pm</span>
+                     </div>
+                 </div>
+                 <i class="fas fa-ellipsis-v fa-2x"></i>
+                </div>
+                 <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores laudantium cum sit et culpa aut quas deserunt magni neque! <a href="#">#Emon</a><a href="#">#Imran</a></p>
+                 <img src="./Socialbook_img/feed-image-5.png" class="post-img" alt="">
+                 
+ 
+                 <div class="post-row">
+                     <div class="activity-icons">
+                         <div><img src="./Socialbook_img/like-blue.png" alt="">210</div>
+                         <div><img src="./Socialbook_img/comments.png" alt="">150</div>
+                         <div><img src="./Socialbook_img/share.png" alt="">230</div>
+ 
+                     </div>
+                     <div class="post-profile-icon">
+                         <img src="./Socialbook_img/profile-pic.png" alt="">  <i class="fas fa-caret-down fa-1x"></i>
+ 
+ 
+                     </div>
+                 </div>
+ 
+ 
+             </div>
+
+             <button type="button" class="Load-More">Load More</button>
+
+            
+
+             
+
+
+            
+            
 
 
 
@@ -161,6 +426,14 @@
 
         </div>
     </div>
+
+
+    <footer class="footer">
+        <p>All Right &copy Reserved by Imran-Reza</p>
+    </footer>
+
+
+    <script src="file.js"></script>
     
 </body>
 </html>
